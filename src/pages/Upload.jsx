@@ -51,6 +51,8 @@ const Upload = () => {
   };
 
   const saveInfo = async (file, fileUrl) => {
+    
+
     const docId = genrateRandomStr().toString();
     setFileDocId(docId);
 
@@ -62,7 +64,7 @@ const Upload = () => {
         fileType: file.type,
         fileUrl: fileUrl,
         userEmail: user?.primaryEmailAddress.emailAddress,
-        userName: user?.fullName,
+        userName: user?.username || user?.firstName+" "+user?.lastName,
         password: "",
         shortUrl: import.meta.env.VITE_APP_BASE_URL + "/f/" + docId,
       });
