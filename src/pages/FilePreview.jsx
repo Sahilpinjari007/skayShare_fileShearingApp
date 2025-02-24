@@ -41,9 +41,9 @@ const FilePreview = () => {
   const handleCopyText = async () => {
     try {
       await navigator.clipboard.writeText(file?.shortUrl);
-      toast.success("Link Copy to clipboard.");
+      toast.success("Link Copy to clipboard!");
     } catch (err) {
-      toast.error("Link Copy to clipboard failed");
+      toast.error("Link Copy to clipboard failed!");
     }
   };
 
@@ -55,9 +55,41 @@ const FilePreview = () => {
       password: password,
     });
     setShowBtnLoader(false);
+    toast.success("Password Saved!");
   };
 
-  const onEmailSend = async (email) => {};
+  const onEmailSend = async (email, file) => {
+    setShowEmailBtnLoader(true);
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        to: email,
+        from: "<skayshare@gmail.com>",
+        subject: `${file?.userName} Sent You a File via SkayShare!`,
+        html: `Hey! 🚀 <strong>${file?.userName}</strong> has shared a file with you via <strong>Skayshare</strong>. <br>
+                     Click the link below to download it instantly. No hassle, just seamless sharing! ⬇️ <br>
+                     <a href="${file?.shortUrl}" target="_blank" >${file?.shortUrl}</a>"`,
+      }),
+    };
+
+    fetch(
+      import.meta.env.VITE_APP_SMTP_SERVER_URL + "/api/v1/mail/send",
+      requestOptions
+    )
+      .then((response) => {
+        if (response.ok) toast.success("Email Send Successfuly!");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Unable to Send Email!");
+      });
+
+    setEmail("");
+    setTimeout(() => {
+      setShowEmailBtnLoader(false);
+    }, 1000);
+  };
 
   if (loader)
     return (
@@ -180,7 +212,7 @@ const FilePreview = () => {
                   </div>
                   {!showEmailBtnLoader ? (
                     <button
-                      onClick={() => onEmailSend(email)}
+                      onClick={() => onEmailSend(email, file)}
                       className=" mt-[20px] w-full p-2 h-full bg-primary px-4 rounded-md font-[400] text-white text-[19px]"
                     >
                       Send Email
