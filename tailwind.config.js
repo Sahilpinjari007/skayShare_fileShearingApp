@@ -1,25 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-          primary: "#007dfc",
-          btnHover: "bg-blue-700"
-      }
+        primary: "#007dfc",
+        btnHover: "bg-blue-700",
+      },
     },
     fontFamily: {
-      'sans': ['TikTokFont', 'Arial', 'Tahoma', 'PingFangSC', 'sans-serif']
+      sans: ["TikTokFont", "Arial", "Tahoma", "PingFangSC", "sans-serif"],
     },
 
-    boxShadow:{
-      
-    }
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: "0" },
+        "100%": { opacity: "1" },
+      },
+      "wt-radio-circle": {
+        "0%": { transform: "scale(0)", opacity: "0" },
+        "100%": { transform: "scale(1)", opacity: "1" },
+      },
+    },
+    animation: {
+      fadeIn: "fadeIn 0.4s ease-in-out",
+      "wt-radio-circle": "wt-radio-circle 0.2s ease",
+    },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
-}
-
-
+  plugins: [require("tailwind-scrollbar-hide")],
+};
