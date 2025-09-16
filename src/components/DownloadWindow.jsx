@@ -129,31 +129,38 @@ const DownloadWindow = () => {
                     playsInline
                     preload="auto"
                     aria-hidden="true"
-                  >
-                    <source src={transfer_expired} type="video/mp4" />
-                  </video>
+                    src={transfer_expired}
+                  ></video>
 
-                  <div className="flex flex-col items-center justify-center gap-2 px-4">
-                    <h2 className="font-normal text-[#17181a] text-[1.125em] leading-[1.2] m-0 mb-[.1875em] text-center px-[.454545em]">
-                      Transfer not available
+                  {!transfer && !loading && (
+                    <div className="flex flex-col items-center justify-center gap-2 px-4">
+                      <h2 className="font-normal text-[#17181a] text-[1.125em] leading-[1.2] m-0 mb-[.1875em] text-center px-[.454545em]">
+                        Transfer not available
+                      </h2>
+                      <p className="text-[#484a4d] leading-[1.4] m-0 mb-[.625em] py-0 px-[1.875em text-center text-[.8125em]">
+                        This transfer is no longer available on our servers. It
+                        has either expired and cannot be recovered, or was
+                        deleted by the sender. To receive the content again,
+                        please contact the sender directly.
+                      </p>
+                    </div>
+                  )}
+                  {!transfer && loading && (
+                    <h2 className="font-normal text-[#17181a] text-[1.125em] leading-[1.2] m-0 mb-[.1875em] text-center px-[.454545em] mt-[40px]">
+                      Transfer Finding...
                     </h2>
-                    <p className="text-[#484a4d] leading-[1.4] m-0 mb-[.625em] py-0 px-[1.875em text-center text-[.8125em]">
-                      This transfer is no longer available on our servers. It
-                      has either expired and cannot be recovered, or was deleted
-                      by the sender. To receive the content again, please
-                      contact the sender directly.
-                    </p>
+                  )}
+                </div>
+                {!transfer && !loading && (
+                  <div className=" fixed bottom-0 left-0 right-0 flex p-3 gap-2 rounded-b-2xl">
+                    <button
+                      onClick={() => navigate("/")}
+                      className="w-full items-center rounded-2xl shadow-none box-border cursor-pointer flex text-base font-medium gap-2 h-12 justify-center leading-[1] outline-0 p-4 no-underline select-none bg-[#3767ea] border-0 text-[#f5f8ff] transition-all duration-150 ease-in-out disabled:opacity-[.4] disabled:pointer-events-none"
+                    >
+                      Sent a file?
+                    </button>
                   </div>
-                </div>
-
-                <div className=" fixed bottom-0 left-0 right-0 flex p-3 gap-2 rounded-b-2xl">
-                  <button
-                    onClick={() => navigate("/")}
-                    className="w-full items-center rounded-2xl shadow-none box-border cursor-pointer flex text-base font-medium gap-2 h-12 justify-center leading-[1] outline-0 p-4 no-underline select-none bg-[#3767ea] border-0 text-[#f5f8ff] transition-all duration-150 ease-in-out disabled:opacity-[.4] disabled:pointer-events-none"
-                  >
-                    Sent a file?
-                  </button>
-                </div>
+                )}
               </div>
             ) : (
               <>
@@ -168,9 +175,8 @@ const DownloadWindow = () => {
                         playsInline
                         preload="auto"
                         aria-hidden="true"
-                      >
-                        <source src={transfer_pass} type="video/mp4" />
-                      </video>
+                        src={transfer_pass}
+                      ></video>
 
                       <div className="flex flex-col items-center justify-center gap-2 px-4">
                         <h2 className=" font-normal text-[#17181a] text-[1.375em] leading-[1.2] m-0 my-0 mx-[.4545454545em] text-center">
