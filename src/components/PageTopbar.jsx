@@ -1,25 +1,25 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Context } from "../context/AppContext";
+
 
 const PageTopbar = () => {
 
-    const { setPageOpen } = useContext(Context);
   const navigate = useNavigate();
+
+  const handleOnBackPress = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="bg-[#fff] border-b border-[#e8ebed] h-[5em] left-0 relative top-0 w-full z-[37] box-border">
       <button
-        onClick={() => {
-          setPageOpen(false);
-          navigate("/");
-        }}
+        onClick={() => handleOnBackPress()}
         className=" cursor-pointer h-12 left-4 absolute w-6 bg-none p-0 text-[#fff] border-0 rounded-[5px] text-[.875em] mt-[1.2857142857em] no-underline transition-[border-color_0.2s_cubic-bezier(.77,0,.175,1),background-color_0.2s_cubic-bezier(.77,0,.175,1),color_0.2s_cubic-bezier(.77,0,.175,1)] box-border"
       >
         <svg
           className=" box-border cursor-pointer text-[#fff] font-medium text-[.875em]"
           viewBox="0 0 24 24"
-          ariaLabel="Close panel"
+          aria-label="Close panel"
           data-testid="close-icon"
         >
           <path

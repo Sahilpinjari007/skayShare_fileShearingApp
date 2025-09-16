@@ -13,7 +13,7 @@ export default {
     },
 
     keyframes: {
-      fadeIn: {
+      "fadeIn": {
         "0%": { opacity: "0" },
         "100%": { opacity: "1" },
       },
@@ -21,10 +21,15 @@ export default {
         "0%": { transform: "scale(0)", opacity: "0" },
         "100%": { transform: "scale(1)", opacity: "1" },
       },
+       'spinner-rotate': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(1turn)' },
+        },
     },
     animation: {
-      fadeIn: "fadeIn 0.4s ease-in-out",
+      "fadeIn": "fadeIn 0.4s ease-in-out",
       "wt-radio-circle": "wt-radio-circle 0.2s ease",
+      'spinner-rotate': 'spinner-rotate 2s linear infinite',
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

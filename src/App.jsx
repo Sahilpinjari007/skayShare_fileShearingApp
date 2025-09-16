@@ -10,6 +10,7 @@ import AppLayout from "./layouts/AppLayout";
 import Callback from "./pages/Callback";
 import { AppContext } from "./context/AppContext";
 import Sent from "./pages/Sent";
+import Received from "./pages/Received";
 import Home from "./pages/Home";
 
 function App() {
@@ -21,10 +22,11 @@ function App() {
             <Route path="/" element={<AppLayout />}>
               <Route path="/transfers" element={<Transfers />}></Route>
               <Route path="/transfers/sent/:id" element={<Sent />}></Route>
+              <Route path="/transfers/recived/:id" element={<Received />}></Route>
               <Route path="/pricing" element={<Pricing />}></Route>
               <Route path="/contacts" element={<Contacts />}></Route>
               <Route path="/account" element={<Account />}></Route>
-              <Route path="/download/:id" element={<Home/>}></Route>
+              <Route path="/download/:id"></Route>
             </Route>
             <Route path="/account/callback" element={<Callback />}></Route>
             <Route path="*" element={<NotFound />}></Route>

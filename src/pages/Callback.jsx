@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Callback = () => {
-  return (
-    <div>Callback</div>
-  )
-}
+  
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
-export default Callback
+  useEffect(() => {
+    localStorage.setItem('authAccessToken', searchParams.get("token") || null);
+    navigate('/')
+  }, []);
+};
+
+export default Callback;

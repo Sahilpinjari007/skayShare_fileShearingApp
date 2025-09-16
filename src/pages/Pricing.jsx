@@ -7,7 +7,7 @@ const Pricing = () => {
   useEffect(() => {
     setPageOpen(true);
     setPricingPage(true);
-  });
+  }, []);
   return (
     <div className="my-0 mx-auto px-[24px] max-w-[1440px] static min-h-[calc(100%-4.0625em)] pt-[3.5em] pb-[6.5625em] box-border">
       <div className="flex flex-col items-center text-center box-border">
@@ -63,16 +63,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Share and receive up to 3 GB / month</span>
@@ -83,16 +83,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>10 transfers per month</span>
@@ -103,16 +103,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Transfer expiry up to 3 days</span>
@@ -123,16 +123,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>No Password protection</span>
@@ -143,16 +143,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Basic upload support</span>
@@ -202,16 +202,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Share and receive up to 100 GB / month</span>
@@ -222,16 +222,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>100 transfers per month</span>
@@ -242,16 +242,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Transfer expiry up to 30 days</span>
@@ -262,16 +262,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Password protection</span>
@@ -282,16 +282,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Email notifications</span>
@@ -302,16 +302,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Automatic malware scanning</span>
@@ -322,16 +322,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Download stats</span>
@@ -385,16 +385,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Share and receive up to 500 GB / month</span>
@@ -405,16 +405,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>1000 transfers per month</span>
@@ -425,16 +425,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Transfer expiry up to 60 days</span>
@@ -445,16 +445,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Password protection</span>
@@ -465,16 +465,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Email notifications</span>
@@ -485,16 +485,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Automatic malware scanning</span>
@@ -505,16 +505,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Request payment</span>
@@ -525,16 +525,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Download stats</span>
@@ -581,16 +581,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Share and receive limitless</span>
@@ -601,16 +601,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Unlimited transfers per month</span>
@@ -621,16 +621,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Unlimited transfer expiration</span>
@@ -641,16 +641,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Full Password protection</span>
@@ -661,16 +661,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Email notifications</span>
@@ -681,16 +681,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Automatic malware scanning</span>
@@ -701,16 +701,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Request payment</span>
@@ -721,16 +721,16 @@ const Pricing = () => {
                         height="24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
+                        className="ml-[-4px] w-[16px] h-[16px] text-[#c2c2c2] mr-2 flex-shrink-0 box-border text-[14px] font-normal leading-[150%]"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
                       >
                         <path
                           d="M5 11.167 10.895 17 19 7"
                           stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                       <span>Download stats</span>

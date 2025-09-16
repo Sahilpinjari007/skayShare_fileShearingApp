@@ -1,0 +1,43 @@
+export const TRANSFER = "TRANSFER";
+export const DOWNLOAD = "DOWNLOAD";
+export const fileExpiryLimits = [
+  "Keep forever",
+  "1 Year",
+  "60 days",
+  "30 days",
+  "7 days",
+  "3 days",
+  "1 day",
+];
+
+export const unsplashQueries = [
+  "mountains",
+  "ocean",
+  "sunset",
+  "galaxy",
+  "forest",
+  "aurora",
+  "desert",
+  "rain",
+  "wildlife",
+  "architecture",
+  "minimal",
+  "cyberpunk",
+  "street photography",
+  "macro",
+  "neon lights",
+  "abstract",
+  "space",
+  "tropical beach",
+  "cityscape",
+  "night sky",
+  "mystic forest fog",
+  "sunrise mountains",
+  "neon city night",
+  "desert stars",
+  "northern lights",
+  "storm clouds",
+  "sakura blossoms",
+  "lonely road",
+  "futuristic skyline",
+];

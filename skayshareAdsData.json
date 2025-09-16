@@ -1,0 +1,110 @@
+[
+  {
+    "bgUrl": "/bg2.webp",
+    "captionUrl": "/caption1.webp",
+    "captionLayerXOffset": -22,
+    "captionLayerYOffset": -78,
+    "captionImageLayerSize": 768,
+    "buttonUrl": "/Button-Black.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+  {
+    "bgUrl": "/bg4.webp",
+    "captionUrl": "/caption2.svg",
+    "captionLayerXOffset": -32,
+    "captionLayerYOffset": -94,
+    "captionImageLayerSize": 1232,
+    "buttonUrl": "/Button-Black.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+  {
+    "bgUrl": "/bg4.webp",
+    "captionUrl": "/caption3.svg",
+    "captionLayerXOffset": -0,
+    "captionLayerYOffset": -56,
+    "captionImageLayerSize": 1184,
+    "buttonUrl": "/Button-Black.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 80,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+  {
+    "bgUrl": "/bg3.webp",
+    "captionUrl": "/caption4.svg",
+    "captionLayerXOffset": -32,
+    "captionLayerYOffset": -95,
+    "captionImageLayerSize": 1312,
+    "buttonUrl": "/Button-Blue.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+  {
+    "bgUrl": "/bg4.webp",
+    "captionUrl": "/caption5.svg",
+    "captionLayerXOffset": -13,
+    "captionLayerYOffset": -92,
+    "captionImageLayerSize": 1262,
+    "buttonUrl": "/Button-Black.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+  {
+    "bgUrl": "/bg1.webp",
+    "captionUrl": "/caption6.webp",
+    "captionLayerXOffset": -21,
+    "captionLayerYOffset": -80,
+    "captionImageLayerSize": 864,
+    "buttonUrl": "/Button-Blue.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+    {
+    "bgUrl": "/bg3.webp",
+    "captionUrl": "/caption7.svg",
+    "captionLayerXOffset": 0,
+    "captionLayerYOffset": -92,
+    "captionImageLayerSize": 1136,
+    "buttonUrl": "/Button-Black.svg",
+    "buttonLayerXOffset": 0,
+    "buttonLayerYOffset": 121,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+      {
+    "bgUrl": "/bg3.webp",
+    "captionUrl": "/caption8.webp",
+    "captionLayerXOffset": 26,
+    "captionLayerYOffset": -80,
+    "captionImageLayerSize": 912,
+    "buttonUrl": "/Button-Blue.svg",
+    "buttonLayerXOffset": 50,
+    "buttonLayerYOffset": 80,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  },
+        {
+    "bgUrl": "/bg3.webp",
+    "captionUrl": "/caption8.webp",
+    "captionLayerXOffset": 26,
+    "captionLayerYOffset": -80,
+    "captionImageLayerSize": 912,
+    "buttonUrl": "/Button-Blue.svg",
+    "buttonLayerXOffset": 50,
+    "buttonLayerYOffset": 80,
+    "buttonImageLayerSize": 320,
+    "scale": "calc( 0.3px + 0.7 * ( 100vh - 360px ) / 840 )"
+  }
+]
